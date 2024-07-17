@@ -1,6 +1,7 @@
 body {
   background-image: linear-gradient(45deg, #4ebd36, #7e7cf9);
   background-attachment: fixed;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,11 +160,12 @@ tr.active {
   min-height: 100px;
   padding: 0 16px;
   box-sizing: border-box;
+  animation: slide-in 1s;
 
   border-radius: 10px;
   background: rgba(132, 132, 132, 0.3);
 
-  top: 10px;
+  bottom: 10px;
   right: 10px;
 
   .title {
@@ -182,5 +184,23 @@ tr.active {
 
   &.error {
     background: rgba(253, 0, 0, 0.3);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100% + 10px));
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(calc(100% + 10px));
+  }
+  to {
+    transform: translateX(0);
   }
 }
