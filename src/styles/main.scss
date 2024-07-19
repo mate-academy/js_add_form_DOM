@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(45deg, #4ebd36, #7e7cf9);
   background-attachment: fixed;
@@ -107,6 +111,7 @@ tr.active {
     align-items: center;
     width: 100%;
     margin-bottom: 8px;
+
     input,
     select {
       width: 150px;
