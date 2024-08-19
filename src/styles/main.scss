@@ -155,6 +155,9 @@ tr.active {
 
 .notification {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   min-height: 100px;
   padding: 0 16px;

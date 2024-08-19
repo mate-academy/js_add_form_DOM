@@ -1,5 +1,5 @@
 1. Replace `<your_account>` with your Github username in the link
-    - [DEMO LINK](https://<your_account>.github.io/js_employees_table_DOM/)
+    - [DEMO LINK](https://venher-v.github.io/js_employees_table_DOM/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
     - Run `npm run test` command to test your code;
     - Run `npm run test:only -- -n` to run fast test ignoring linter;
@@ -39,7 +39,7 @@ Start table:
 ```html
 <label>Name: <input name="name" type="text"></label>
 ```
-- Add qa attributes for each input field:
++ Add qa attributes for each input field:
 ```
  data-qa="name" 
  data-qa="position" 
@@ -61,7 +61,7 @@ Start table:
 - Notification titles and descriptions are up to you.
 - Add qa attribute for notification: `data-qa="notification"` and class `error`/`success` depending on the result.
 
-##### Implement editing of table cells by double-clicking on it (optional). 
+##### Implement of table cells by double-clicking on it (optional). 
 - Double click on the cell of the table, should remove text, and append input with `cell-input` class.
 - The input value should contain replaced by input text.
 - Only one cell can be edited at the time.
