@@ -16,11 +16,11 @@
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Office</th>
-          <th>Age</th>
-          <th>Salary</th>
+          <th id="nameSort">Name</th>
+          <th id="positionSort">Position</th>
+          <th id="officeSort">Office</th>
+          <th id="ageSort">Age</th>
+          <th id="salarySort">Salary</th>
         </tr>
       </thead>
       <tbody>
@@ -119,6 +119,66 @@
         </tr>
       </tfoot>
     </table>
+
+    <div class="new-employee-form">
+      <label>
+        Name:
+        <input
+          name="name"
+          type="text"
+          required
+          data-qa="name"
+        />
+      </label>
+
+      <label>
+        Position:
+        <input
+          name="position"
+          type="text"
+          required
+          data-qa="position"
+        />
+      </label>
+
+      <label>
+        Office:
+        <select
+          name="office"
+          required
+          data-qa="office"
+        >
+          <option value="Tokyo">Tokyo</option>
+          <option value="Singapore">Singapore</option>
+          <option value="London">London</option>
+          <option value="New York">New York</option>
+          <option value="Edinburgh">Edinburgh</option>
+          <option value="San Francisco">San Francisco</option>
+        </select>
+      </label>
+
+      <label>
+        Age:
+        <input
+          name="age"
+          type="number"
+          required
+          data-qa="age"
+        />
+      </label>
+
+      <label>
+        Salary:
+        <input
+          name="salary"
+          type="number"
+          required
+          data-qa="salary"
+        />
+      </label>
+
+      <button id="saveButton">Save to table</button>
+    </div>
     <script src="scripts/main.js"></script>
   </body>
 </html>
